@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="color-scheme" content="light">
+<meta name="supported-color-schemes" content="light">
+<title>Quantica Newsletter</title>
+<!--[if mso]>
+<noscript>
+<xml>
+<o:OfficeDocumentSettings>
+<o:PixelsPerInch>96</o:PixelsPerInch>
+</o:OfficeDocumentSettings>
+</xml>
+</noscript>
+<style>
+table {border-collapse: collapse;}
+td, th, div, p, a, h1, h2, h3 {font-family: Arial, sans-serif;}
+</style>
+<![endif]-->
+<style>
+  :root {
+    color-scheme: light;
+    supported-color-schemes: light;
+  }
+
+  html, body {
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+    background-color: #f1f5f9 !important;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+  }
+
+  table {
+    border-collapse: collapse !important;
+  }
+
+  img {
+    border: 0;
+    outline: none;
+    text-decoration: none;
+    -ms-interpolation-mode: bicubic;
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    line-height: 100%;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  /* ============================================
+     DARK MODE LOCKDOWN & FOOTER GRADIENT STYLES
+     ============================================ */
+  .email-bg, .outer-bg {
+    background-color: #f1f5f9 !important;
+  }
+
+  .card-bg, .row-bg {
+    background-color: #ffffff !important;
+  }
+
+  .footer-bg {
+    background-color: #351e70 !important;
+    background: linear-gradient(135deg, #351e70 0%, #776cef 50%, #f888f6 100%) !important;
+  }
+
+  .dark-text {
+    color: #1e293b !important;
+  }
+
+  .footer-title {
+    color: #ffffff !important;
+  }
+
+  .footer-muted {
+    color: #f1f5f9 !important;
+  }
+
+  .footer-fine {
+    color: #e2e8f0 !important;
+  }
+
+  .footer-link {
+    color: #ffffff !important;
+  }
+
+  .footer-fine-link {
+    color: #ffffff !important;
+  }
+
+  .btn-primary, .btn-primary td, .btn-primary a {
+    background-color: #7c3aed !important;
+    color: #ffffff !important;
+  }
+
+  .btn-secondary, .btn-secondary td, .btn-secondary a {
+    background-color: #9333ea !important;
+    color: #ffffff !important;
+  }
+
+  /* Gmail / Android Mail / generic prefers-color-scheme clients */
+  @media (prefers-color-scheme: dark) {
+    body, .email-bg, .outer-bg {
+      background-color: #f1f5f9 !important;
+    }
+    .card-bg, .row-bg, table, td {
+      background-color: #ffffff !important;
+    }
+    .footer-bg {
+      background-color: #351e70 !important;
+      background: linear-gradient(135deg, #351e70 0%, #776cef 50%, #f888f6 100%) !important;
+    }
+    .dark-text {
+      color: #1e293b !important;
+    }
+    .footer-title {
+      color: #ffffff !important;
+    }
+    .footer-muted {
+      color: #f1f5f9 !important;
+    }
+    .footer-fine {
+      color: #e2e8f0 !important;
+    }
+    .footer-link {
+      color: #ffffff !important;
+    }
+    .footer-fine-link {
+      color: #ffffff !important;
+    }
+    .btn-primary, .btn-primary td, .btn-primary a {
+      background-color: #7c3aed !important;
+      color: #ffffff !important;
+    }
+    .btn-secondary, .btn-secondary td, .btn-secondary a {
+      background-color: #9333ea !important;
+      color: #ffffff !important;
+    }
+    img {
+      filter: none !important;
+    }
+  }
+
+  /* Outlook.com / Windows Mail (Outlook Genie / auto dark mode) */
+  [data-ogsc] body,
+  [data-ogsc] .email-bg,
+  [data-ogsc] .outer-bg,
+  [data-ambgof] body,
+  [data-ambgof] .email-bg,
+  [data-ambgof] .outer-bg {
+    background-color: #f1f5f9 !important;
+  }
+
+  [data-ogsc] .card-bg,
+  [data-ogsc] .row-bg,
+  [data-ambgof] .card-bg,
+  [data-ambgof] .row-bg {
+    background-color: #ffffff !important;
+  }
+
+  [data-ogsc] .footer-bg,
+  [data-ambgof] .footer-bg {
+    background-color: #351e70 !important;
+    background: linear-gradient(135deg, #351e70 0%, #776cef 50%, #f888f6 100%) !important;
+  }
+
+  [data-ogsc] .dark-text,
+  [data-ambgof] .dark-text {
+    color: #1e293b !important;
+  }
+
+  [data-ogsc] .footer-title,
+  [data-ambgof] .footer-title {
+    color: #ffffff !important;
+  }
+
+  [data-ogsc] .footer-muted,
+  [data-ambgof] .footer-muted {
+    color: #f1f5f9 !important;
+  }
+
+  [data-ogsc] .footer-fine,
+  [data-ambgof] .footer-fine {
+    color: #e2e8f0 !important;
+  }
+
+  [data-ogsc] .footer-link,
+  [data-ambgof] .footer-link {
+    color: #ffffff !important;
+  }
+
+  [data-ogsc] .footer-fine-link,
+  [data-ambgof] .footer-fine-link {
+    color: #ffffff !important;
+  }
+
+  [data-ogsc] .btn-primary,
+  [data-ogsc] .btn-primary a,
+  [data-ambgof] .btn-primary,
+  [data-ambgof] .btn-primary a {
+    background-color: #7c3aed !important;
+    color: #ffffff !important;
+  }
+
+  [data-ogsc] .btn-secondary,
+  [data-ogsc] .btn-secondary a,
+  [data-ambgof] .btn-secondary,
+  [data-ambgof] .btn-secondary a {
+    background-color: #9333ea !important;
+    color: #ffffff !important;
+  }
+
+  /* Samsung Mail dark mode */
+  [data-ogsb] {
+    background-color: #ffffff !important;
+  }
+
+  /* Responsive */
+  @media only screen and (max-width: 620px) {
+    .email-container {
+      width: 100% !important;
+      max-width: 100% !important;
+    }
+    .fluid-img {
+      width: 100% !important;
+      height: auto !important;
+    }
+    .btn-stack-td {
+      display: inline-block !important;
+      padding: 0 !important;
+    }
+    .btn-table {
+      width: 100% !important;
+    }
+    .btn-cell {
+      display: block !important;
+      width: 100% !important;
+      padding: 0 0 14px 0 !important;
+    }
+    .btn-cell-last {
+      padding-bottom: 0 !important;
+    }
+    .btn-link {
+      display: block !important;
+      width: 100% !important;
+      box-sizing: border-box !important;
+    }
+    .footer-padding {
+      padding: 24px 20px !important;
+    }
+  }
+</style>
+</head>
+<body bgcolor="#f1f5f9" style="margin: 0; padding: 0; background-color: #f1f5f9;">
+
+<!-- Preheader (hidden) -->
+<div style="display:none; font-size:1px; color:#f1f5f9; line-height:1px; max-height:0; max-width:0; opacity:0; overflow:hidden; mso-hide:all;">
+  Quantica — the latest in quantum computing, delivered to your inbox.
+</div>
+
+<center class="email-bg" style="width: 100%; background-color: #f1f5f9;">
+<div style="max-width: 600px; margin: 0 auto;" class="email-container">
+
+  <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" align="center" bgcolor="#f1f5f9" class="outer-bg" style="background-color: #f1f5f9;">
+    <tr>
+      <td align="center" style="padding: 24px 12px; background-color: #f1f5f9;" bgcolor="#f1f5f9" class="outer-bg">
+
+        <!--[if mso]>
+        <table role="presentation" align="center" border="0" cellspacing="0" cellpadding="0" width="600">
+        <tr>
+        <td>
+        <![endif]-->
+
+        <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" align="center" bgcolor="#ffffff" class="email-container card-bg" style="max-width: 600px; width: 100%; background-color: #ffffff; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.08);">
+
+          <!-- IMAGE 1 -->
+          <tr>
+            <td align="center" bgcolor="#ffffff" class="row-bg" style="background-color: #ffffff; line-height: 0; font-size: 0;">
+              <img src="https://quantica-newsletter.vercel.app/Aug_2026/prototype%201/iPhone%2016%20-%201.png" alt="Quantica Newsletter Section 1" width="600" class="fluid-img" style="display: block; width: 100%; max-width: 600px; height: auto; border: 0; outline: none; text-decoration: none;">
+            </td>
+          </tr>
+
+          <!-- IMAGE 2 -->
+          <tr>
+            <td align="center" bgcolor="#ffffff" class="row-bg" style="background-color: #ffffff; line-height: 0; font-size: 0;">
+              <img src="https://quantica-newsletter.vercel.app/Aug_2026/prototype%201/iPhone%2016%20-%202.png" alt="Quantica Newsletter Section 2" width="600" class="fluid-img" style="display: block; width: 100%; max-width: 600px; height: auto; border: 0; outline: none; text-decoration: none;">
+            </td>
+          </tr>
+
+          <!-- CTA 1 -->
+          <tr>
+            <td align="center" bgcolor="#ffffff" class="row-bg" style="padding: 24px 20px; background-color: #ffffff;">
+              <table role="presentation" border="0" cellspacing="0" cellpadding="0" align="center">
+                <tr>
+                  <td align="center" bgcolor="#7c3aed" class="btn-primary" style="border-radius: 6px; background-color: #7c3aed;">
+                    <a href="https://example.com/read-more-1" target="_blank" class="btn-primary btn-link" style="display: inline-block; padding: 13px 30px; font-family: Arial, Helvetica, sans-serif; font-size: 14px; font-weight: bold; color: #ffffff; background-color: #7c3aed; border-radius: 6px; text-decoration: none;">Read More</a>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+          <!-- IMAGE 3 -->
+          <tr>
+            <td align="center" bgcolor="#ffffff" class="row-bg" style="background-color: #ffffff; line-height: 0; font-size: 0;">
+              <img src="https://quantica-newsletter.vercel.app/Aug_2026/prototype%201/iPhone%2016%20-%203.png" alt="Quantica Newsletter Section 3" width="600" class="fluid-img" style="display: block; width: 100%; max-width: 600px; height: auto; border: 0; outline: none; text-decoration: none;">
+            </td>
+          </tr>
+
+          <!-- CTA 2 -->
+          <tr>
+            <td align="center" bgcolor="#ffffff" class="row-bg" style="padding: 24px 20px; background-color: #ffffff;">
+              <table role="presentation" border="0" cellspacing="0" cellpadding="0" align="center">
+                <tr>
+                  <td align="center" bgcolor="#7c3aed" class="btn-primary" style="border-radius: 6px; background-color: #7c3aed;">
+                    <a href="https://example.com/read-more-2" target="_blank" class="btn-primary btn-link" style="display: inline-block; padding: 13px 30px; font-family: Arial, Helvetica, sans-serif; font-size: 14px; font-weight: bold; color: #ffffff; background-color: #7c3aed; border-radius: 6px; text-decoration: none;">Read More</a>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+          <!-- IMAGE 4 -->
+          <tr>
+            <td align="center" bgcolor="#ffffff" class="row-bg" style="background-color: #ffffff; line-height: 0; font-size: 0;">
+              <img src="https://quantica-newsletter.vercel.app/Aug_2026/prototype%201/iPhone%2016%20-%204.png" alt="Quantica Newsletter Section 4" width="600" class="fluid-img" style="display: block; width: 100%; max-width: 600px; height: auto; border: 0; outline: none; text-decoration: none;">
+            </td>
+          </tr>
+
+          <!-- CTA 3 -->
+          <tr>
+            <td align="center" bgcolor="#ffffff" class="row-bg" style="padding: 24px 20px; background-color: #ffffff;">
+              <table role="presentation" border="0" cellspacing="0" cellpadding="0" align="center">
+                <tr>
+                  <td align="center" bgcolor="#7c3aed" class="btn-primary" style="border-radius: 6px; background-color: #7c3aed;">
+                    <a href="https://example.com/read-more-3" target="_blank" class="btn-primary btn-link" style="display: inline-block; padding: 13px 30px; font-family: Arial, Helvetica, sans-serif; font-size: 14px; font-weight: bold; color: #ffffff; background-color: #7c3aed; border-radius: 6px; text-decoration: none;">Read More</a>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+          <!-- IMAGE 5 -->
+          <tr>
+            <td align="center" bgcolor="#ffffff" class="row-bg" style="background-color: #ffffff; line-height: 0; font-size: 0;">
+              <img src="https://quantica-newsletter.vercel.app/Aug_2026/prototype%201/iPhone%2016%20-%205.png" alt="Quantica Newsletter Section 5" width="600" class="fluid-img" style="display: block; width: 100%; max-width: 600px; height: auto; border: 0; outline: none; text-decoration: none;">
+            </td>
+          </tr>
+
+          <!-- TWO SIDE-BY-SIDE CTAs -->
+          <tr>
+            <td align="center" bgcolor="#ffffff" class="row-bg" style="padding: 24px 20px; background-color: #ffffff;">
+              <!--[if mso]>
+              <table role="presentation" border="0" cellspacing="0" cellpadding="0" align="center">
+              <tr>
+              <td style="padding:0 12px 0 0;">
+              <table role="presentation" border="0" cellspacing="0" cellpadding="0"><tr>
+              <td align="center" bgcolor="#7c3aed" style="border-radius:6px; background-color:#7c3aed;">
+              <a href="https://example.com/read-more-4a" style="display:inline-block; padding:13px 26px; font-family:Arial,sans-serif; font-size:14px; font-weight:bold; color:#ffffff; text-decoration:none;">Read More</a>
+              </td>
+              </tr></table>
+              </td>
+              <td style="padding:0 0 0 12px;">
+              <table role="presentation" border="0" cellspacing="0" cellpadding="0"><tr>
+              <td align="center" bgcolor="#9333ea" style="border-radius:6px; background-color:#9333ea;">
+              <a href="https://example.com/read-more-4b" style="display:inline-block; padding:13px 26px; font-family:Arial,sans-serif; font-size:14px; font-weight:bold; color:#ffffff; text-decoration:none;">Read More</a>
+              </td>
+              </tr></table>
+              </td>
+              </tr>
+              </table>
+              <![endif]-->
+              <!--[if !mso]><!-->
+              <table role="presentation" border="0" cellspacing="0" cellpadding="0" align="center" class="btn-table" style="margin: 0 auto;">
+                <tr>
+                  <td class="btn-cell" style="padding: 0 12px 0 0; vertical-align: top;">
+                    <table role="presentation" border="0" cellspacing="0" cellpadding="0">
+                      <tr>
+                        <td align="center" bgcolor="#7c3aed" class="btn-primary" style="border-radius: 6px; background-color: #7c3aed;">
+                          <a href="https://example.com/read-more-4a" target="_blank" class="btn-primary btn-link" style="display: inline-block; padding: 13px 26px; font-family: Arial, Helvetica, sans-serif; font-size: 14px; font-weight: bold; color: #ffffff; background-color: #7c3aed; border-radius: 6px; text-decoration: none;">Read More</a>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                  <td class="btn-cell btn-cell-last" style="padding: 0 0 0 12px; vertical-align: top;">
+                    <table role="presentation" border="0" cellspacing="0" cellpadding="0">
+                      <tr>
+                        <td align="center" bgcolor="#9333ea" class="btn-secondary" style="border-radius: 6px; background-color: #9333ea;">
+                          <a href="https://example.com/read-more-4b" target="_blank" class="btn-secondary btn-link" style="display: inline-block; padding: 13px 26px; font-family: Arial, Helvetica, sans-serif; font-size: 14px; font-weight: bold; color: #ffffff; background-color: #9333ea; border-radius: 6px; text-decoration: none;">Read More</a>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+              <!--<![endif]-->
+            </td>
+          </tr>
+
+          <!-- IMAGE 6 -->
+          <tr>
+            <td align="center" bgcolor="#ffffff" class="row-bg" style="background-color: #ffffff; line-height: 0; font-size: 0;">
+              <img src="https://quantica-newsletter.vercel.app/Aug_2026/prototype%201/iPhone%2016%20-%206.png" alt="Quantica Newsletter Section 6" width="600" class="fluid-img" style="display: block; width: 100%; max-width: 600px; height: auto; border: 0; outline: none; text-decoration: none;">
+            </td>
+          </tr>
+
+          <!-- GRADIENT FOOTER -->
+          <tr>
+            <td align="center" bgcolor="#351e70" class="footer-bg footer-padding" style="padding: 32px 24px; background-color: #351e70; background: linear-gradient(135deg, #351e70 0%, #776cef 50%, #f888f6 100%); font-family: Arial, Helvetica, sans-serif;">
+
+              <p class="footer-title" style="margin: 0 0 8px 0; font-size: 18px; font-weight: bold; color: #ffffff;">Quantica</p>
+
+              <p class="footer-muted" style="margin: 0 0 16px 0; font-size: 13px; color: #f1f5f9; line-height: 1.5;">
+                Delivering technology, insights, and innovations straight to your inbox.
+              </p>
+
+              <p style="margin: 0 0 20px 0; font-size: 13px;">
+                <a href="https://example.com/website" target="_blank" class="footer-link" style="color: #ffffff; text-decoration: none; font-weight: bold; margin: 0 10px;">Website</a>&nbsp;&bull;&nbsp;
+                <a href="https://example.com/twitter" target="_blank" class="footer-link" style="color: #ffffff; text-decoration: none; font-weight: bold; margin: 0 10px;">Twitter</a>&nbsp;&bull;&nbsp;
+                <a href="https://example.com/linkedin" target="_blank" class="footer-link" style="color: #ffffff; text-decoration: none; font-weight: bold; margin: 0 10px;">LinkedIn</a>
+              </p>
+
+              <p class="footer-fine" style="margin: 0; font-size: 11px; color: #e2e8f0; line-height: 1.4;">
+                &copy; 2026 Quantica. All rights reserved.<br>
+                <a href="https://example.com/unsubscribe" target="_blank" class="footer-fine-link" style="color: #ffffff; text-decoration: underline;">Unsubscribe</a> from future editions
+              </p>
+
+            </td>
+          </tr>
+
+        </table>
+
+        <!--[if mso]>
+        </td>
+        </tr>
+        </table>
+        <![endif]-->
+
+      </td>
+    </tr>
+  </table>
+
+</div>
+</center>
+
+</body>
+</html>
